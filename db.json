@@ -1,0 +1,84 @@
+{
+  "product": [
+    {
+      "name": "Laptop",
+      "price": "700",
+      "description": "Descripción del producto 2",
+      "category": "Categoría 11",
+      "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMzA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Producto 2",
+      "price": 39.99,
+      "description": "Descripción del producto 2",
+      "category": "Categoría 2",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMzA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+    },
+    {
+      "id": "3",
+      "name": "Producto 3",
+      "price": 19.99,
+      "description": "Descripción del producto 3",
+      "category": "Categoría 3",
+      "image": "https://images.unsplash.com/photo-1517430816045-df4b7de777fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMzA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+    },
+    {
+      "id": "4",
+      "name": "Producto 4",
+      "price": 49.99,
+      "description": "Descripción del producto 4",
+      "category": "Categoría 4",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMzA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+    },
+    {
+      "id": "5",
+      "name": "Producto 5",
+      "price": 25.99,
+      "description": "Descripción del producto 5",
+      "category": "Categoría 5",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMzA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400"
+    },
+    {
+      "name": "Laptop",
+      "price": "699.99",
+      "description": "Descripción del producto 2",
+      "category": "Categoría 11",
+      "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMzA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+      "id": "1234"
+    },
+    {
+      "id": "2345",
+      "name": "Anthony Jesus Medina Garcia",
+      "price": "3462",
+      "description": ",sakhc",
+      "category": "ksdhb ",
+      "image": "kdjxb "
+    },
+    {
+      "id": "829362",
+      "name": "ahjs",
+      "price": "1234",
+      "description": "kiyhv",
+      "category": ",jscvhav",
+      "image": ",khbc"
+    },
+    {
+      "id": "",
+      "name": "",
+      "price": "",
+      "description": "",
+      "category": "",
+      "image": ""
+    },
+    {
+      "id": "986",
+      "name": "",
+      "price": "1234",
+      "description": ",jyhc",
+      "category": ",jscvhav",
+      "image": ",khbc"
+    }
+  ]
+}

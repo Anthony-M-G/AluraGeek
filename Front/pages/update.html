@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <link rel="stylesheet" href="/Front/Css/reset.css">
+    <link rel="stylesheet" href="/Front/Css/styles.css">
+</head>
+<header>
+    <H1>ALURAGEEK</H1>
+    <button><a href="/index.html">Volver a la página principal</a></button>
+</header>
+<body>
+    <main>
+        <div>
+            <div class="data-container" data-container>
+                <div class="containerForm">
+                    <form id="productForm" data-update>
+                        <label for="productName">Nombre del producto:</label><br>
+                        <input type="text" id="productName" name="name"><br>
+                        <label for="productPrice">Precio:</label><br>
+                        <input type="text" id="productPrice" name="price"><br>
+                        <label for="productDescription">Descripción:</label><br>
+                        <textarea id="productDescription" name="description"></textarea><br>
+                        <label for="productCategory">Categoría:</label><br>
+                        <input type="text" id="productCategory" name="category"><br>
+                        <label for="productImageURL">URL de la imagen:</label><br>
+                        <input type="text" id="productImageURL" name="image"><br>
+                        <label for="productId">ID del producto:</label><br>
+                        <input type="text" id="productId" name="id" disabled><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="main2.js"></script>
+</body>
+</html>
