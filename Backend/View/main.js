@@ -1,4 +1,4 @@
-import { productService } from "./Backend/Service/ProductService.js";
+import { productService } from "../Service/ProductService.js";
 
 // Path: main.js
 
