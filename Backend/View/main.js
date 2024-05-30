@@ -1,4 +1,5 @@
 import { productService } from "../Service/ProductService.js";
+import { producto } from "../Entities/Product.js";
 
 // Path: main.js
 
@@ -10,14 +11,20 @@ function createCard(product){
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML += `
+    <div class="card-header" data-cardHeader>
     <img src="${product.image}" alt="${product.name} ">
+    </div>
     <div class="card-content">
         <h2 class="card-title">${product.name}</h2>
         <p class="card-category">${product.category}</p>
         <p class="card-description">${product.description}</p>
         <p class="card-price">$${product.price}</p>
-        <button class="btn-update" data-update>Editar</button>
-        <button class="btn-delete" data-clear>Eliminar</button>
+        <button class="btn-update" data-update><span class="material-symbols-outlined">
+        edit
+        </span></button>
+        <button class="btn-delete" data-clear><span class="material-symbols-outlined">
+        delete
+        </span></button>
     </div> 
     `;
     // Agregar eventos a los botones; se crean dentro de la función para que cada card tenga sus propios eventos y no se mezclen
@@ -43,18 +50,13 @@ function createCard(product){
 // Esta función se encarga de obtener los productos y renderizarlos en el DOM
 async function renderProducts(){
     const products = await productService.getAllProducts();
-    console.log(products);
     products.forEach(product => {
         containerCards.appendChild(createCard(product));
     });
 }
 
-//  Esta función se encarga de renderizar los productos en el DOM y se ejecuta al cargar la página
-const renderizar= async ()=>{
-    containerCards.innerHTML = '';
-    await renderProducts();
-}
-document.addEventListener('DOMContentLoaded', renderizar);
+
+document.addEventListener('DOMContentLoaded', renderProducts);
 
 // Este evento se dispara cuando se envía el formulario de creación de productos
 form.addEventListener('submit', async (e) => {
@@ -68,7 +70,7 @@ form.addEventListener('submit', async (e) => {
     const response = await productService.createProduct(name, price, description, category, image,id);
     console.log(response);
     if(response!=undefined){
-        renderizar();
+        renderProducts();
     }
 });
 

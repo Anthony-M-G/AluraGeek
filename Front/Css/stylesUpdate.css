@@ -1,0 +1,104 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5300C8;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.btn-returnMain {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.btn-returnMain {
+    text-decoration: none;
+    color: #fff;
+    background-color: #121213;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-returnMain a:hover {
+    background-color: #0056b3;
+}
+
+.containerForm {
+    padding: 1rem;
+}
+.onecard{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.card-category{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    background-color: #5300C8;
+    
+   
+}

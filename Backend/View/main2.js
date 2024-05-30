@@ -5,7 +5,7 @@ import { producto } from '/Backend/Entities/Product.js';
 const product = JSON.parse(localStorage.getItem('product')); // trayendo el id del producto
 console.log(product);
 const formUpdate = document.querySelector('[data-update]');
-const divContainer = document.querySelector('[data-container]');
+const divContainer = document.querySelector('[data-ex]');
 
 formUpdate.name.value = product.name;
 formUpdate.price.value = product.price;
@@ -22,13 +22,15 @@ formUpdate.addEventListener('submit', async (e) => {
         formUpdate.category.value, 
         formUpdate.image.value,
         formUpdate.id.value);
-
     const response = await productService.updateProduct(productUpdated);
-    console.log(response);
+    if(response){
+        alert('Producto actualizado '+response);
+    }
+    
 });
 
 async function renderProduct() {
-    const product = await productService.getProductById(formUpdate.id.value);
+   
     const card = document.createElement('div');
     card.className = 'onecard';
     card.innerHTML += `

@@ -1,111 +1,140 @@
 /* General styles */
+.orbitron-x {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     margin: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     color: #333;
 }
 
 header {
-    padding: 20px 0;
+    
+    padding: 10px 0;
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
-
-    background-color: rgb(199, 85, 222);
+    background-color: #5300C8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 header h1 {
-    font-style: italic;
-    font-size: 2.5rem;
-    color: #ffffff;
-    padding-top: 10px ;
+    font-family: 'reboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
 }
     
 
 /* Main container */
 .data-container {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+    justify-content: space-around;
     width: 100%;
     max-width: 1000px;
     margin: 0 ;
+    left: 0;
+  
 }
 
 .cardsContainer {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start; /* Ajuste aquí */
-    flex-grow: 2;
-    padding: 20px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    gap: 10px;
+    margin-bottom: 10px;
+   
+   
 }
 
 /* Card styles */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #000000;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #000000;
     transition: transform 0.2s;
+    border-width: 3px;
+    max-height: fit-content;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
-
+.card-header {
+    margin: 20px;
+    ;
+    
+}
 .card img {
     width: 100%;
     height: auto;
 }
 
+
 .card-content {
     padding: 16px;
+    background-color: #000000;
+    height: auto;
+    display: block;
+
 }
 
 .card-title {
     font-size: 1.5rem;
     margin: 0 0 8px;
-    color: #3498db;
+    color: #ffffff;
 }
 
 .card-category {
     font-size: 0.9rem;
-    color: #555;
+    color: #ffffff;
     margin: 0 0 16px;
 }
 
 .card-description {
     font-size: 1rem;
     margin: 0 0 16px;
-    color: #333;
+    color: #ffffff;
 }
 
 .card-price {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #e67e22;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 /* Form styles */
-.containerForm {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: fit-content;
-    margin-top: 21px;
-}
+
 .btn-update{
     display: inline-block;
     margin-top: auto;
@@ -130,6 +159,19 @@ header h1 {
     font-size: 1rem;
     transition: background-color 0.2s;
 }
+.containerForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
 
 form {
     display: flex;
@@ -151,7 +193,7 @@ form textarea {
 
 form input[type="submit"] {
     padding: 10px;
-    background-color: #3498db;
+    background-color: #5300C8;
     border: none;
     color: white;
     border-radius: 4px;
@@ -164,26 +206,33 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #2980b9;
 }
-.onecard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin-left: 50px;
-    padding: 0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: fit-content;
-    margin-top: 20px;
 
-}
-.onecard img {
+
+
+footer{
+    opacity: 0px;
+    background-color:#5300C8;
+    color: white;
+    text-align: center;
+    padding: 20px;
     width: 100%;
-    height: auto;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+   
+    transition: opacity 0.5s;
+    
+    
+
+
+
 }
 
+  
+  
+  
 /* Responsive styles */
 @media (max-width: 768px) {
     .data-container {

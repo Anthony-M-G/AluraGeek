@@ -6,49 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Front/Css/reset.css">
     <link rel="stylesheet" href="Front/Css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>ALURAGEEK CHALLENGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <H1>ALURAGEEK</H1>
+        <H1 class="orbitron-x">ALURAGEEK</H1>
     </header>
 
     <main>
-        <div>
-            <div class="data-container">
+        
+       <div class="data-container">
                 <div class="cardsContainer" data-cards>
 
 
                 </div>
-                <div class="containerForm">
-                    <form id="productForm" data-form>
-                        <label for="productName">Nombre del producto:</label><br>
-                        <input type="text" id="productName" name="name"><br>
+        </div>
+        <div class="containerForm">
+            <form id="productForm" data-form>
+                <label for="productName">Nombre del producto:</label><br>
+                <input type="text" id="productName" name="name" required><br>
 
-                        <label for="productPrice">Precio:</label><br>
-                        <input type="text" id="productPrice" name="price"><br>
+                <label for="productPrice">Precio:</label><br>
+                <input type="number" id="productPrice" name="price" min="0" required><br>
 
-                        <label for="productDescription">Descripción:</label><br>
-                        <textarea id="productDescription" name="description"></textarea><br>
+                <label for="productDescription">Descripción:</label><br>
+                <textarea id="productDescription" name="description" required></textarea><br>
 
-                        <label for="productCategory">Categoría:</label><br>
-                        <input type="text" id="productCategory" name="category"><br>
+                <label for="productCategory">Categoría:</label><br>
+                <input type="text" id="productCategory" name="category"><br>
 
-                        <label for="productImageURL">URL de la imagen:</label><br>
-                        <input type="text" id="productImageURL" name="image"><br>
+                <label for="productImageURL">URL de la imagen:</label><br>
+                <input type="url" id="productImageURL" name="image" required><br>
 
-                        <label for="productId">ID del producto:</label><br>
-                        <input type="text" id="productId" name="id"><br>
+                <label for="productId">ID del producto:</label><br>
+                <input type="text" id="productId" name="id" required><br>
 
-                        <input type="submit" value="Submit">
-                    </form>
+                <input type="submit" value="Submit">
+            </form>
 
 
-                </div>
-            </div>
         </div>
 
+        
 
     </main>
     <footer>

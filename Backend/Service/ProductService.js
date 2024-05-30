@@ -6,7 +6,7 @@ const getAllProducts = async () => {
     if(response.length==0){
         return "No hay productos disponibles";
     }
-    return response;
+    return response.map(e=>new producto.product(e.name, e.price, e.description, e.category, e.image,e.id));
 }
 
 const createProduct = async (name, price, description, category, image,id) => {
